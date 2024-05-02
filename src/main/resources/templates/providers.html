@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste des Fournisseurs</title>
+</head>
+<body>
+    <h1>Liste des Fournisseurs</h1>
+    <div th:each="provider : ${providers}">
+        <h4 th:text="${provider}">Nom du fournisseur</h4>
+    </div>
+</body>
+</html>
+
